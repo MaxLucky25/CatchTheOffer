@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Нижний клапан конверта (желто-оранжевый) -->
+  <path d="M8 20L24 32L40 20V38C40 39.1046 39.1046 40 38 40H10C8.89543 40 8 39.1046 8 38V20Z" fill="#FFA500" stroke="#1E3A8A" stroke-width="1"/>
+  
+  <!-- Верхний клапан конверта (светло-голубой/зеленый, открыт) -->
+  <path d="M8 20L24 12L40 20L24 32L8 20Z" fill="#7DD3FC" stroke="#1E3A8A" stroke-width="1"/>
+  
+  <!-- Документ частично выходит из конверта (увеличен) -->
+  <rect x="11" y="14" width="26" height="20" rx="1" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="0.8"/>
+  
+  <!-- Верхняя часть документа (красно-оранжевая) - значительно увеличена -->
+  <rect x="11" y="14" width="26" height="15" rx="1" fill="#FF6B35"/>
+  <text x="24" y="23.5" font-family="Arial, sans-serif" font-size="6.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">OFFER</text>
+  
+  <!-- Горизонтальная полоса (светло-фиолетовая/розоватая) -->
+  <rect x="11" y="29" width="26" height="2" fill="#E9D5FF"/>
+  
+  <!-- Нижняя часть документа (белая) -->
+  <rect x="11" y="31" width="26" height="3" fill="#FFFFFF"/>
+  
+  <!-- Темно-синяя линия внизу документа -->
+  <line x1="15" y1="32.5" x2="33" y2="32.5" stroke="#1E3A8A" stroke-width="1.5"/>
+</svg>

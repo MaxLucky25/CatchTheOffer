@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Catch The Google</title>
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <div class="top-items">
+                    <div class="line">
+                        <label for="01">Grid size</label>
+                        <select name="select" id="01">
+                            <option value="4x4">4x4</option>
+                            <option value="5x5">5x5</option>
+                            <option value="7x7">7x7</option>
+                            <option value="8x8">8x8</option>
+                        </select>
+                    </div>
+                    <div class="line">
+                        <label for="points-to-win">Points to win</label>
+                        <input
+                            type="number"
+                            id="points-to-win"
+                            min="1"
+                            max="50"
+                            value="5"
+                        />
+                    </div>
+                    <div class="line">
+                        <label for="points-to-lose">Misses to lose</label>
+                        <input
+                            type="number"
+                            id="points-to-lose"
+                            min="1"
+                            max="50"
+                            value="10"
+                        />
+                    </div>
+                    <div class="line">
+                        <label for="players-count">Players</label>
+                        <select id="players-count">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="switch-button">
+                        <label>Sound on</label>
+                        <button class="toggle">
+                            <span class="icon-slider"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-elements">
+                    <button class="button main-button">START GAME</button>
+                    <div class="game-area">
+                        <div id="result"></div>
+                        <table id="game-table" class="table">
+                            <tbody></tbody>
+                        </table>
+                        <div class="result-container">
+                            <div class="result-block">
+                                <span class="result-title">Catch:</span>
+                                <span class="result">0</span>
+                            </div>
+                            <div class="result-block">
+                                <span class="result-title">Miss:</span>
+                                <span class="result">0</span>
+                            </div>
+                        </div>
+                        <div class="players-scores"></div>
+                        <div class="achievements-block"></div>
+                    </div>
+                    <div class="modal" style="display: none">
+                        <div class="modal-decoration">
+                            <img
+                                src="img/icons/winnerIcon.svg"
+                                alt="icon"
+                                class="modal-icon"
+                            />
+                        </div>
+                        <div class="modal-elements">
+                            <div class="title-modal">You're hired!</div>
+                            <div class="text-modal">Congratulations</div>
+                            <div class="modal-result">
+                                <div class="result-block">
+                                    <span class="result-title">Catch:</span>
+                                    <span class="result catch-result">0</span>
+                                </div>
+                                <div class="result-block">
+                                    <span class="result-title">Miss:</span>
+                                    <span class="result miss-result">0</span>
+                                </div>
+                            </div>
+                            <button class="button">Play again</button>
+                            <button class="button settings-button">
+                                Settings
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-decoration">
+                            <img src="img/icons/lossIcon.svg" alt="icon" />
+                        </div>
+                        <div class="modal-elements">
+                            <div class="title-modal">Rejected</div>
+                            <div class="text-modal">
+                                You'll be lucky next time
+                            </div>
+                            <div class="modal-result">
+                                <div class="result-block">
+                                    <span class="result-title">Catch:</span>
+                                    <span class="result">12</span>
+                                </div>
+                                <div class="result-block">
+                                    <span class="result-title">Miss:</span>
+                                    <span class="result">10</span>
+                                </div>
+                            </div>
+                            <button class="button">Play again</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="game__footer"></div>
+        <script src="js/entities/Position.js" type="module"></script>
+        <script src="js/settings/Settings.js" type="module"></script>
+        <script src="js/utility/randomNumberUtility.js" type="module"></script>
+        <script src="js/utility/gameStatuses.js" type="module"></script>
+        <script src="js/utility/PositionManager.js" type="module"></script>
+        <script src="js/entities/Player.js" type="module"></script>
+        <script src="js/entities/Google.js" type="module"></script>
+        <script src="js/game.js" type="module"></script>
+        <script src="js/script.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "name": "catchtheoffer",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "format": "prettier --write ."
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@babel/preset-env": "^7.27.2",
+        "babel-jest": "^30.0.2",
+        "jest": "^30.0.2",
+        "ws": "^8.18.3"
+    },
+    "devDependencies": {
+        "prettier": "^3.6.0"
+    }
+}
